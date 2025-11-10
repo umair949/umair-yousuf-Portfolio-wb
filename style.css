@@ -129,7 +129,7 @@ a:hover {
     margin-bottom: 40px;
 }
 
-/
+
 .social-buttons {
     display: flex;
     gap: 10px;
@@ -401,4 +401,3 @@ a:hover {
     .skill-arrow {
         display: none;
     }
-}
