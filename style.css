@@ -51,12 +51,14 @@ body {
     margin-left: 15px;
 }
 
+
 /* ------------------ HERO SECTION ------------------ */
 .hero-section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 60px 40px;
+    padding-bottom: 130px;   /* 🔥 FIX → icons ke liye space */
     background-color: #25252e;
 }
 
@@ -149,21 +151,23 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    z-index: 5;
-    margin-top: -60px;
-    margin-bottom: -60px;
+    z-index: 10;
+    margin-top: 20px;     /* 🔥 FIXED – no negative margin */
+    margin-bottom: 40px;  /* 🔥 FIXED */
 }
 
 .social-btns-section .social-btns {
     display: flex;
-    gap: 15px;
+    gap: 40px;
     flex-wrap: wrap;
+    border-radius: 20px;
+    padding-top: 40px;
 }
 
 .social-btns-section .social-btn {
-    padding: 10px 20px;
-    border-radius: 6px;
-    background: #777;
+    padding: 20px 25px;
+    border-radius: 15px;
+    background: #3a3939;
     color: #fff;
     text-decoration: none;
     font-size: 0.9em;
@@ -176,6 +180,7 @@ body {
 .social-btns-section .social-btn:nth-child(2):hover { background: #0f9d58; color: #fff; } 
 .social-btns-section .social-btn:nth-child(3):hover { background: #0077b5; color: #fff; } 
 .social-btns-section .social-btn:nth-child(4):hover { background: #e01e5a; color: #fff; } 
+
 
 /* ------------------ SKILLS SECTION ------------------ */
 .skills-section {
@@ -226,8 +231,10 @@ body {
     border-radius: 10px;
 }
 
+
 /* ------------------ RESPONSIVE ------------------ */
 @media (max-width: 1024px) {
+
     .hero-section,
     .skills-section {
         flex-direction: column;
@@ -274,23 +281,29 @@ body {
         padding: 40px 20px;
         gap: 20px;
     }
-
-    .social-btns-section {
-        margin-top: -40px;
-        margin-bottom: -40px;
-    }
 }
 
+
+/* MOBILE */
 @media (max-width: 600px) {
+
     .header {
         flex-direction: column;
-        gap: 15px;
-        padding: 15px 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .navbar ul {
         flex-direction: column;
         gap: 10px;
+        align-items: center;
+        width: 100%;
     }
 
     .social-icons {
@@ -343,7 +356,7 @@ body {
     }
 
     .social-btns-section {
-        margin-top: -30px;
-        margin-bottom: -30px;
+        margin-top: 15px;     /* 🔥 FIX */
+        margin-bottom: 30px;  /* 🔥 FIX */
     }
 }
